@@ -15,9 +15,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </div>
@@ -27,73 +27,84 @@
         </div>
     </section>
 
-    <section id="page-header" class="about-header">
-        <h2>Leading the <span style="color: #F13AB1; font-family: cursive;">Fashion & Lifestyle</span></h2>
-        <p id="para"><strong>We use technology to democratize fashion & lifestyle and help people look good.</strong></p>
+    <section >
+        <p id="para" style="color: #000; 
+                            justify-content: center; 
+                            display: flex;
+                            padding-top: 50px;">
+            <a href="">BAG</a>----ADDRESS----PAYMENT
+        </p>
     </section>
 
-     <section id="about-head" class="section-p1">
-        <img src="image/about/about1.jpg" alt="">
-        <div>
-            <h2>We create <span style="color: #F13AB1; font-family: cursive;">MAGIC</span> with our values</h2>
-            <p>
-                <p><span style="color: #F13AB1; font-family: cursive">M</span> <strong>ake it Happen</strong> , That's how we get things done.</p>
-                <p><span style="color: #F13AB1; font-family: cursive;">A</span> <strong>im High</strong> , That's how we break records.</p>
-                <p><span style="color: #F13AB1; font-family: cursive;">G</span> <strong>reat together</strong> , That's how we resolve conflicts.</p>
-                <p><span style="color: #F13AB1; font-family: cursive;">I</span> <strong>ntegrity</strong> , That's how we stay upright.</p>
-                <p><span style="color: #F13AB1; font-family: cursive;">C</span> <strong>onsumer First</strong> , That's how we up the game.</p>
-            </p>
-            
-            <br><br>
-
-            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">
-                no compromise on quality.
-            </marquee>
-        </div>
-     </section>
-
-     <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="image/about/about2.mp4"></video>
-        </div>
-     </section>
-
-     <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="/image/feature/freeshipping.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="/image/feature/onlineorder.jpg" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="/image/feature/savemoney.jpg" alt="">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="/image/feature/supports.png" alt="">
-            <h6>24/7 Support</h6>
-        </div>
-        <div class="fe-box">
-            <img src="/image/feature/promotions.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="/image/feature/happysell.png" alt="">
-            <h6>Show Ratings</h6>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="image/products/shirt1.jpg" alt=""></td>
+                    <td>Short Sleeve Shirt</td>
+                    <td>Rs.1499</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.1499</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="image/products/shirt10.jpg" alt=""></td>
+                    <td>Short Sleeve Shirt</td>
+                    <td>Rs.1499</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.1499</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="image/products/shirt30.jpg" alt=""></td>
+                    <td>Short Sleeve Shirt</td>
+                    <td>Rs.1499</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.1499</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+
+        <div id="subtotal">
+            <h3>PRICE DETAILS</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>Rs.4497</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><Strong>Total Amount</Strong></td>
+                    <td><Strong>Rs.4497</Strong></td>
+                </tr>
+            </table>
+            <button class="normal" onclick="window.location.href='payment.html';">
+                PLACE ORDER
+            </button>
         </div>
     </section>
 

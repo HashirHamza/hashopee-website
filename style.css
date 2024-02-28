@@ -588,8 +588,11 @@ footer .copyright {
 }
 
 /* Shop page */
+
+
+
 #page-header {
-    background-image: url("image/banner/banner27.jpeg");
+    background-image: url("image/banner/banner6.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -602,7 +605,7 @@ footer .copyright {
 
 #page-header h2,
 #page-header p {
-    color: #fff;
+    color: #222;
 }
 
 #pagination {
@@ -623,7 +626,12 @@ footer .copyright {
     font-weight: 600;
 }
 
+
+
 /* Single product page */
+
+
+
 
 #prodetails {
     display: flex;
@@ -689,8 +697,12 @@ footer .copyright {
 
 /* Blog page */
 
+
+
+
+
 #page-header.blog-header {
-    background-image: url(image/banner/banner22.jpg);
+    background-image: url(image/banner/banner9.jpg);
 }
 
 #blog {
@@ -761,7 +773,7 @@ footer .copyright {
 /* About Page */
 
 #page-header.about-header {
-    background-image: url(image/banner/banner21.jpg);
+    background-image: url(image/banner/banner8.jpg);
 }
 
 #about-head img {
@@ -902,6 +914,129 @@ footer .copyright {
     font-weight: 600;
     color: #000;
 }
+
+/* cart page */
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+}
+
+/* cart page*/
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+
+
+
 
 
 
@@ -1166,4 +1301,125 @@ footer .copyright {
         width: 100%;
     }
 
+    /*cart page*/
+
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #coupon {
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+
+
+
+/* payment page*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); 
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	border: none; 
+	outline: none; 
+	font-family: 'Poppins', sans-serif; 
+	text-transform: capitalize; 
+	transition: all 0.2s linear; 
+} 
+
+.container { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	min-height: 100vh; 
+	padding: 25px; 
+	background: #d6eef1; 
+} 
+
+.container form { 
+	width: 700px; 
+	padding: 20px; 
+	background: #fff; 
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); 
+} 
+
+.container form .row { 
+	display: flex; 
+	flex-wrap: wrap; 
+	gap: 15px; 
+} 
+
+.container form .row .col { 
+	flex: 1 1 250px; 
+} 
+
+.col .title { 
+	font-size: 20px; 
+	color: rgb(237, 55, 23); 
+	padding-bottom: 5px; 
+} 
+
+.col .inputBox { 
+	margin: 15px 0; 
+} 
+
+.col .inputBox label { 
+	margin-bottom: 10px; 
+	display: block; 
+} 
+
+.col .inputBox input, 
+.col .inputBox select { 
+	width: 100%; 
+	border: 1px solid #ccc; 
+	padding: 10px 15px; 
+	font-size: 15px; 
+} 
+
+.col .inputBox input:focus, 
+.col .inputBox select:focus { 
+	border: 1px solid #000; 
+} 
+
+.col .flex { 
+	display: flex; 
+	gap: 15px; 
+} 
+
+.col .flex .inputBox { 
+	flex: 1 1; 
+	margin-top: 5px; 
+} 
+
+.col .inputBox img { 
+	height: 34px; 
+	margin-top: 5px; 
+	filter: drop-shadow(0 0 1px #000); 
+} 
+
+.container form .submit_btn { 
+	width: 100%; 
+	padding: 12px; 
+	font-size: 17px; 
+	background: rgb(1, 143, 34); 
+	color: #fff; 
+	margin-top: 5px; 
+	cursor: pointer; 
+	letter-spacing: 1px; 
+} 
+
+.container form .submit_btn:hover { 
+	background: #3d17fb; 
+} 
+
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button { 
+	display: none; 
 }
